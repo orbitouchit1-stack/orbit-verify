@@ -31,9 +31,9 @@ export default function Header() {
                 </Link>
 
             </nav>
-            <div class="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
 
-                <Link href="/login" class="h-[48px] min-w-[96px] px-6 flex items-center justify-center
+                <Link href="/login" className="h-[48px] min-w-[96px] px-6 flex items-center justify-center
                            border border-[#2BC76B] rounded-lg
                            text-[#162344] font-semibold
                            hover:bg-[#2BC76B] hover:text-white
@@ -41,7 +41,7 @@ export default function Header() {
                     Login
                 </Link>
 
-                <Link href="/contact" class="h-[48px] min-w-[152px] px-6 flex items-center justify-center
+                <Link href="/contact" className="h-[48px] min-w-[152px] px-6 flex items-center justify-center
                            bg-[#2BC76B] rounded-lg
                            text-[#162344] font-semibold
                            hover:bg-[#20A957] transition-all duration-300">
