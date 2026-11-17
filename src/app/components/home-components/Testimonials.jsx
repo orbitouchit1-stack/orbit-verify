@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const testimonials = [
   {
@@ -47,6 +47,16 @@ export default function Testimonials() {
       (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
   };
+
+  // Auto slide after every 2.5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % testimonials.length);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
 
   const item = testimonials[active];
 

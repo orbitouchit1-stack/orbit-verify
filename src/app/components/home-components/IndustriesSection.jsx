@@ -97,7 +97,7 @@ export default function IndustriesSection() {
         </div>
 
         {/* Industry Cards */}
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {industries.map((item, index) => {
             const Icon = item.icon;
 
@@ -122,7 +122,7 @@ export default function IndustriesSection() {
                   {item.title}
                 </h3>
 
-                <p className="mb-4 flex-grow text-sm leading-7 text-slate-500">
+                <p className="mb-4 flex-grow text-sm leading-6 text-slate-500">
                   {item.description}
                 </p>
 

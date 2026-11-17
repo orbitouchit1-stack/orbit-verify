@@ -1,3 +1,4 @@
+import AwardsFaqSection from "./components/home-components/AwardsFaqSection";
 import HeroSection from "./components/home-components/HeroSection";
 import IndustriesSection from "./components/home-components/IndustriesSection";
 import RecognisedBrands from "./components/home-components/RecognisedBrands";
@@ -14,6 +15,7 @@ export default function Home() {
 <RecognisedBrands />
 <VerificationSolution />
 <Testimonials />
+<AwardsFaqSection/>
     </>
   );
 }

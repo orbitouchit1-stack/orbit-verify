@@ -302,13 +302,13 @@ body {
 /* Brand Marquee Animation */
 
 .brand-track {
-  animation: brandScroll 32s linear infinite;
+  animation: brandScroll 20s linear infinite;
   will-change: transform;
 }
 
 .brand-track.brand-reverse {
   animation-name: brandScrollReverse;
-  animation-duration: 36s;
+  animation-duration: 22s;
 }
 
 .brand-marquee:hover .brand-track {
