@@ -1,4 +1,5 @@
 import Image from "next/image";
+import StatsCounter from "./components/StatsCounter";
 
 export default function Home() {
   return (
@@ -166,6 +167,9 @@ export default function Home() {
 
         </div>
       </section>
+
+      <StatsCounter />
+
     </>
   );
 }
