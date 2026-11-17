@@ -296,3 +296,49 @@ body {
     font-size: 38px;
   }
 }
+
+/**Recognised Brands**/
+
+/* Brand Marquee Animation */
+
+.brand-track {
+  animation: brandScroll 32s linear infinite;
+  will-change: transform;
+}
+
+.brand-track.brand-reverse {
+  animation-name: brandScrollReverse;
+  animation-duration: 36s;
+}
+
+.brand-marquee:hover .brand-track {
+  animation-play-state: paused;
+}
+
+@keyframes brandScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes brandScrollReverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-track {
+    animation: none !important;
+  }
+}

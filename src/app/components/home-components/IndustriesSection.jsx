@@ -122,7 +122,7 @@ export default function IndustriesSection() {
                   {item.title}
                 </h3>
 
-                <p className=" flex-grow text-sm leading-7 text-slate-500">
+                <p className="mb-4 flex-grow text-sm leading-7 text-slate-500">
                   {item.description}
                 </p>
 
